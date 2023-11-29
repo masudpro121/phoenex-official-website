@@ -6,3 +6,7 @@ p{
   @apply m-0
 }
 
+.blue-btn{
+  @apply bg-cblue px-5 py-2 rounded-lg font-semibold
+}
+

@@ -46,9 +46,9 @@ const Navbar = () => {
             <div className="relative">
               <div className="flex gap-2 cursor-pointer" onClick={()=>{handleDropdown('research')}}>
                 <p className="">Research & Development</p>
-                <Image className={dropdown=='research' && 'rotate-180'} src={DropdownImg} />
+                <Image className={dropdown=='research' ? 'rotate-180':''} src={DropdownImg} />
               </div>
-              <div className={`absolute cursor-pointer mt-2  ${dropdown!='research' && 'hidden'}`}>
+              <div className={`absolute cursor-pointer mt-2  ${dropdown!='research' ? 'hidden':''}`}>
                 <div className="">
                   <Link href="/other">Other</Link>
                 </div>
@@ -60,9 +60,9 @@ const Navbar = () => {
             <div className="relative">
               <div className="flex gap-2 cursor-pointer" onClick={()=>{handleDropdown('workshop')}}>
                 <p className="">Workshop</p>
-                <Image className={dropdown=='workshop' && 'rotate-180'} src={DropdownImg} />
+                <Image className={dropdown=='workshop' ? 'rotate-180':''} src={DropdownImg} />
               </div>
-              <div className={`absolute cursor-pointer mt-2  ${dropdown!='workshop' && 'hidden'}`}>
+              <div className={`absolute cursor-pointer mt-2  ${dropdown!='workshop' ? 'hidden':''}`}>
                 <div className="">
                   <Link href="/other">Other</Link>
                 </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
               Community
             </div>
             <div>
-              <button className="bg-cblue px-5 py-2 rounded-lg">Contact Us</button>
+              <button className="blue-btn">Contact Us</button>
             </div>
           </div>
         </div>
