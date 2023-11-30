@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="w-full">
           <div className="flex items-center">
             <Image className="h-16" src={Logo} />
-            <h1 className="text-2xl font-bold text-cwhite">PhoenEx</h1>
+            <h3 className="text-2xl font-bold text-cwhite">PhoenEx</h3>
           </div>
           <div className="space-y-2 pt-4">
             <p><span className="text-clightGray">Email:</span> contact@phoenex.com</p>
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="w-full space-y-4">
           <div>
-            <h1 className="text-2xl font-semibold">Newsletter</h1>
+            <h3 className="text-2xl font-semibold">Newsletter</h3>
             <p className="text-clightGray mt-2">Connecting You with the Latest</p>
           </div>
           <div className="flex gap-3 items-center">

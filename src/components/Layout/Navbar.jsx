@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between gap-4 mx-10 py-1">
           <div className="flex items-center">
             <Image className="h-16" src={Logo} />
-            <h1 className="text-2xl font-bold text-cwhite">PhoenEx</h1>
+            <h3 className="text-2xl font-bold text-cwhite">PhoenEx</h3>
           </div>
           
           {/* Right Side  */}
