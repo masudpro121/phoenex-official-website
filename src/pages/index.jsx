@@ -6,6 +6,7 @@ import HomeProjects from "@/components/Homepage/HomeProjects"
 import HomeExplore from "@/components/Homepage/HomeExplore"
 import Wave from "@/components/Common/Wave"
 import HomeEdu from "@/components/Homepage/HomeEdu"
+import HomeFundraising from "@/components/Homepage/HomeFundraising"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function Home() {
         <HomeExplore />
         <Wave />
         <HomeEdu />
+        <HomeFundraising />
       </div>
   )
 }
