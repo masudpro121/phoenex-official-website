@@ -77,12 +77,12 @@ const HomeProjects = () => {
                   <h4 className="text-xl font-semibold">{project.title}</h4>
                   <p className="text-clightGray">{project.description}</p>
                 </div>
-                <div className="space-y-2 mt-5 text-clightGray">
+                <div className="space-y-2 mt-5 text-cwhite">
                   {project.infos.map((info, j) => {
                     return (
                       <div key={info + j} className="flex gap-3">
                         <div className="text-2xl font-bold ">.</div>
-                        <div>{info}</div>
+                        <div >{info}</div>
                       </div>
                     );
                   })}

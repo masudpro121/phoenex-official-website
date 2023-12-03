@@ -80,7 +80,7 @@ const HomeFundraising = () => {
                 <div className="space-y-2 mt-5 text-clightGray">
                   {project.infos.map((info, j) => {
                     return (
-                      <div key={info + j} className="flex gap-3">
+                      <div key={info + j} className="flex gap-3 text-cwhite">
                         <div className="text-2xl font-bold ">.</div>
                         <div>{info}</div>
                       </div>
