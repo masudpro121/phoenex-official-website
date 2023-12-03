@@ -29,7 +29,7 @@ const HomeSay = () => {
           {
             users.map((user, i)=>{
               return (
-                <div className="flex gap-5 items-center">
+                <div key={i} className="flex gap-5 items-center">
                   <div>
                     <Image className="w-20" src={user.img} />
                   </div>

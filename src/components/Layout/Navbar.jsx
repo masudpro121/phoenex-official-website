@@ -27,12 +27,12 @@ const Navbar = () => {
           {/* Right Side  */}
           <div className="flex gap-7 items-center">
             <div>
-              Product & Services
+              <Link href="/product-and-services">Product & Services</Link>
             </div>
             <div className="relative">
-              <div className="flex gap-2 cursor-pointer" onClick={()=>{handleDropdown('venture')}}>
-                <p className="">Venture Portfolio</p>
-                <Image className={dropdown=='venture' ? 'rotate-180' :''} src={DropdownImg} />
+              <div className="flex gap-2 cursor-pointer" >
+                <Link href="venture-portfolio">Venture Portfolio</Link>
+                <Image onClick={()=>{handleDropdown('venture')}} className={dropdown=='venture' ? 'rotate-180' :''} src={DropdownImg} />
               </div>
               <div className={`absolute cursor-pointer mt-2  ${dropdown!='venture' && 'hidden'}`}>
                 <div className="">
