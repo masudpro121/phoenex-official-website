@@ -44,9 +44,9 @@ const Navbar = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="flex gap-2 cursor-pointer" onClick={()=>{handleDropdown('research')}}>
-                <p className="">Research & Development</p>
-                <Image className={dropdown=='research' ? 'rotate-180':''} src={DropdownImg} />
+              <div className="flex gap-2 cursor-pointer" >
+                <Link href="/research-and-development" className="">Research & Development</Link>
+                <Image onClick={()=>{handleDropdown('research')}} className={dropdown=='research' ? 'rotate-180':''} src={DropdownImg} />
               </div>
               <div className={`absolute cursor-pointer mt-2  ${dropdown!='research' ? 'hidden':''}`}>
                 <div className="">
