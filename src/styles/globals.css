@@ -13,3 +13,7 @@ p{
 h1{
   @apply text-7xl font-bold
 }
+
+*{
+  font-family: 'Poppins', sans-serif;
+}

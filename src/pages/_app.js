@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { createContext } from "react"
 
+
 export const MyContext = createContext()
 export default function App({ Component, pageProps }) {
   const value = {
