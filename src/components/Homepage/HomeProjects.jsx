@@ -82,7 +82,7 @@ const HomeProjects = () => {
                     return (
                       <div key={info + j} className="flex gap-3">
                         <div className="text-2xl font-bold ">.</div>
-                        <div >{info}</div>
+                        <p className="leading-loose  text-sm" >{info}</p>
                       </div>
                     );
                   })}

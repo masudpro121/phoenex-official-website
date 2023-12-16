@@ -6,9 +6,9 @@ const HomeExplore2 = () => {
   return (
     <div className="m-20 flex gap-20">
       <div className="space-y-7">
-        <h1>Explore the Excitement</h1>
+        <h2 className="text-6xl font-bold">Explore the Excitement</h2>
         <p className="pt-5">Expand your knowledge horizon with our educational video section. Each video is a gateway to new insights and discoveries, presenting complex concepts.</p>
-        <ol className="list-decimal ml-5">
+        <ol className="list-decimal ml-5 space-y-5">
           <li><span className="font-semibold text-cblue">Diverse Genres:</span> From heart-pounding adventures to laugh-out-loud moments.</li>
           <li><span className="font-semibold text-cblue">Captivating Narratives:</span> Stories that keep you on the edge of your seat.</li>
           <li><span className="font-semibold text-cblue">Stunning Visuals: </span> High-quality production and breathtaking cinematography.</li>

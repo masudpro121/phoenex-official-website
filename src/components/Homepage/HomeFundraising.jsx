@@ -82,7 +82,7 @@ const HomeFundraising = () => {
                     return (
                       <div key={info + j} className="flex gap-3 text-cwhite">
                         <div className="text-2xl font-bold ">.</div>
-                        <div>{info}</div>
+                        <p className="text-sm leading-loose">{info}</p>
                       </div>
                     );
                   })}
@@ -90,11 +90,11 @@ const HomeFundraising = () => {
                 <div className="flex justify-between mt-5">
                   <div className="space-y-1">
                     <p>Min per Investor</p>
-                    <h2 className="text-4xl font-bold">$9.5M</h2>
+                    <h2 className="text-4xl font-semibold">$9.5M</h2>
                   </div>
                   <div className="space-y-1">
                     <p>Total Required</p>
-                    <h2 className="text-4xl font-bold">$20M</h2>
+                    <h2 className="text-4xl font-semibold">$20M</h2>
                   </div>
                 </div>
                 <div className="flex justify-between items-center mt-8">

@@ -12,8 +12,8 @@ function HomeHero() {
     <div className="bg-cgray mx-20  rounded-3xl mt-10 flex">
       <div className="p-20 w-full ">
         <div className="space-y-5 ">
-          <h1>Empowering <br/> Your Journey to <br/> Success</h1>
-          <p className="text-clightGray text-lg">We aim to enhance rational decision-making among individuals and <br/> promote psychological well-being through technology research and <br/> information design</p>
+          <h1 className="leading-relaxed">Empowering <br/> Your Journey to <br/> Success</h1>
+          <p className="text-clightGray text-lg leading-loose">We aim to enhance rational decision-making among individuals and  promote psychological well-being through technology research and information design</p>
           <button className="blue-btn">Explore Our Products</button>
         </div>
         <div className="flex items-center mt-10 gap-x-4">
