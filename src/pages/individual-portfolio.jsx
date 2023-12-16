@@ -1,3 +1,4 @@
+import GetInTouch from "@/components/Common/GetInTouch"
 import IndPortfolioDetails from "@/components/IndividualPortfolio/IndPortfolioDetails"
 import IndPortfolioExplore from "@/components/IndividualPortfolio/IndPortfolioExplore"
 import IndPortfolioHero from "@/components/IndividualPortfolio/IndPortfolioHero"
@@ -11,6 +12,7 @@ const IndividualPortfolioPage = () => {
       <IndPortfolioDetails />
       <IndPortfolioUserSay />
       <IndPortfolioExplore />
+      <GetInTouch />
     </div>
   )
 }
