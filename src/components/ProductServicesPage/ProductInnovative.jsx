@@ -18,27 +18,27 @@ const ProductInnovative = () => {
       </div>
       <div className="flex gap-20 items-center">
         <div className="w-full">
-          <h2 className="text-4xl font-bold">Empowering Learning and Knowledge Management</h2>
+          <h2 className="text-4xl font-bold leading-loose">Empowering Learning and Knowledge Management</h2>
           <div className="grid grid-cols-2 mt-10 gap-8">
-            <div className="bg-cgray p-5 rounded-md space-y-2">
+            <div className="bg-cgray rounded-xl p-4 space-y-2">
               <p className="text-cblue font-semibold text-xl">Language Learning Apps</p>
-              <p className="text-clightGray">Experience our language learning apps designed to make language acquisition seamless and fun.</p>
+              <p className="text-clightGray leading-loose">Experience our language learning apps designed to make language acquisition seamless and fun.</p>
             </div>
-            <div className="bg-cgray p-5 rounded-md space-y-2">
+            <div className="bg-cgray rounded-xl p-4 space-y-2">
               <p className="text-cblue font-semibold text-xl">Knowledge Management Software</p>
-              <p className="text-clightGray">Organize and optimize your knowledge with our intuitive knowledge management software</p>
+              <p className="text-clightGray leading-loose">Organize and optimize your knowledge with our intuitive knowledge management software</p>
             </div>
-            <div className="bg-cgray p-5 rounded-md space-y-2">
+            <div className="bg-cgray rounded-xl p-4 space-y-2">
               <p className="text-cblue font-semibold text-xl"> Knowledge Transformation</p>
-              <p className="text-clightGray">Transform information into actionable knowledge with our transformative tools.</p>
+              <p className="text-clightGray leading-loose">Transform information into actionable knowledge with our transformative tools.</p>
             </div>
-            <div className="bg-cgray p-5 rounded-md space-y-2">
+            <div className="bg-cgray rounded-xl p-4 space-y-2">
               <p className="text-cblue font-semibold text-xl">Financial Literacy Tools</p>
-              <p className="text-clightGray">Enhance your financial knowledge and literacy with our user-friendly tools.</p>
+              <p className="text-clightGray leading-loose">Enhance your financial knowledge and literacy with our user-friendly tools.</p>
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-[40%]">
           <Image  src={InnovativeImg} />
         </div>
       </div>

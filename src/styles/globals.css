@@ -18,3 +18,9 @@ h1{
   font-family: 'Poppins', sans-serif;
 }
 
+.product-hero-bg{
+  background-image: url("../images/product-services/hero_img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
