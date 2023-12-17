@@ -7,8 +7,8 @@ const GetInTouch = () => {
   return (
     <div className="flex   w-3/4 m-auto my-20">
       <div className=" w-full space-y-5">
-        <h2 className="font-bold text-5xl">Get in Touch for Inquiries and Feedback</h2>
-        <p className="text-clightGray">
+        <h2 className="font-bold text-5xl leading-relaxed">Get in Touch for Inquiries and Feedback</h2>
+        <p className="text-clightGray leading-loose">
           Your Questions, Feedback, and Inquiries Matter! Use the Form to Share
           Your<br/> Thoughts, and Our Team Will Get Back to You Promptly. We
           Appreciate Your <br/> Interest in PHOENEX.
@@ -38,21 +38,21 @@ const GetInTouch = () => {
       <div className=" space-y-3">
         <div>
           <label htmlFor="">Full Name</label> <br/>
-          <input className="bg-cgray  mt-1 w-80 px-3 py-1 rounded-md" type="text" placeholder="Enter your name here" />
+          <input className="bg-cgray  mt-1 w-96 px-3 py-2 rounded-md" type="text" placeholder="Enter your name here" />
         </div>
         <div>
           <label htmlFor="">Email</label> <br/>
-          <input className="bg-cgray  mt-1 w-80 px-3 py-1 rounded-md" type="text" placeholder="Enter your email here" />
+          <input className="bg-cgray  mt-1 w-96 px-3 py-2 rounded-md" type="text" placeholder="Enter your email here" />
         </div>
         <div>
           <label htmlFor="">Subject</label> <br/>
-          <input className="bg-cgray  mt-1 w-80 px-3 py-1 rounded-md" type="text" placeholder="Enter topic here" />
+          <input className="bg-cgray  mt-1 w-96 px-3 py-2 rounded-md" type="text" placeholder="Enter topic here" />
         </div>
         <div>
           <label htmlFor="">Your message</label> <br/>
-          <textarea className="bg-cgray  mt-1 w-80 h-20 px-3 py-1 rounded-md" type="text" placeholder="Type here........" />
+          <textarea className="bg-cgray  mt-1 w-96 h-20 px-3 py-2 rounded-md" type="text" placeholder="Type here........" />
         </div>
-        <button className="blue-btn">Send Message</button>
+        <button className="blue-btn ">Send Message</button>
       </div>
     </div>
   );

@@ -73,7 +73,7 @@ const Infographic = () => {
                 </div> 
                 <div className="bg-cgray p-5 rounded-xl">
                   <h3 className="text-white text-2xl font-semibold">{info.title}</h3>
-                  <p className="text-clightGray mt-2">{info.description}</p>
+                  <p className="text-clightGray mt-2 leading-loose">{info.description}</p>
                 </div>
               </div>
             )
