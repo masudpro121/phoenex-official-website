@@ -39,7 +39,7 @@ const ResearchEconomicsHero = () => {
           {
             datas.map((data, i)=>{
               return(
-                <div className={`px-7 py-5 ${data.title == accordion ? 'bg-cgray rounded-xl': ''}`}>
+                <div key={i} className={`px-7 py-5 ${data.title == accordion ? 'bg-cgray rounded-xl': ''}`}>
                   <div className="flex items-center gap-3 cursor-pointer"  onClick={()=>setAccordion(data.title)}>
                     <p className={`text-xl  ${data.title == accordion? 'text-cblue': ''}`} >
                         {data.title}

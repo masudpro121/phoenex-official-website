@@ -24,3 +24,10 @@ h1{
   background-position: right;
   background-size: contain;
 }
+
+.workshop-hero-bg{
+  background-image: url("../images/workshop/hero_img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}

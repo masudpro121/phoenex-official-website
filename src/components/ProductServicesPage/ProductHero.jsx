@@ -15,6 +15,6 @@ function ProductHero() {
       
     </div>
   )
-}
+} 
 
 export default ProductHero
