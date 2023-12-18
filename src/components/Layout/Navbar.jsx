@@ -93,17 +93,18 @@ const Navbar = () => {
                         category?.sub?.length>0 &&  <Image onClick={()=>{handleDropdown(category.link)}} className={dropdown==category.link ? 'rotate-180' :''} src={DropdownImg} />
                       }
                     </div>
+                    <div  className={`absolute  w-64 px-4 py-1 rounded-sm bg-stone-950 cursor-pointer top-10 space-y-4 py-2  ${dropdown!=category.link &&'hidden'}`}>
                     {
                       category?.sub && category.sub.map((sub, j)=>{
+
                         return(
-                          <div key={i+j} className={`absolute  w-64 px-4 py-1 rounded-sm bg-stone-950 cursor-pointer top-10  ${dropdown!=category.link &&'hidden'}`}>
-                          <div className=""> 
-                            <Link href={sub.link}>{sub.title}</Link>
-                          </div>
-                        </div>
+                            <div key={i+j} > 
+                              <Link href={sub.link}>{sub.title}</Link>
+                            </div>
                         )
                       })
                     }
+                    </div>
                   </div>
                 )
               })

@@ -8,53 +8,22 @@ import Image from "next/image"
 
 
 const WorkshopPast = () => {
-  const events = [
-    {
-      img: Event1,
-    },
-    {
-      img: Event2,
-      col: 2
-    },
-    {
-      img: Event3,
-    },
-    {
-      img: Event4,
-      col: 2
-    },
-    {
-      img: Event5,
-      col: 2
-    },
-  ]
+  
   return (
     <div className="m-20">
       <div className="text-center">
         <h1>Past Events</h1>
         <p className="text-clightGray py-7">Missed out on previous events? Catch up on the highlights and success stories from our past gatherings, celebrating the spirit of innovation.</p>
       </div>
-      <div className="grid grid-cols-4 gap-10">
-        {
-          events.slice(0,3).map((event, i)=>{
-            return(
-              <div className={`${event.col? 'col-span-'+event.col: ''}`} key={i}>
-                <Image src={event.img} />
-              </div>
-            )
-          })
-        }
-      </div>
+      
       <div className="grid grid-cols-4 gap-10 mt-10">
-        {
-          events.slice(3,5).map((event, i)=>{
-            return(
-              <div className={`${event.col? 'col-span-'+event.col: ''}`} key={i}>
-                <Image src={event.img} />
-              </div>
-            )
-          })
-        }
+        <Image src={Event1} />
+        <Image className="col-span-2" src={Event2} />
+        <Image src={Event3} />
+      </div>
+      <div className="grid grid-cols-2 gap-10 mt-10">
+        <Image src={Event4} />
+        <Image src={Event5} />
       </div>
     </div>
   )
