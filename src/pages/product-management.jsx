@@ -1,3 +1,4 @@
+import GetInTouch from "@/components/Common/GetInTouch"
 import Wave from "@/components/Common/Wave"
 import WorkshopManagementHero from "@/components/WorkshopManagement/WorkshopManagementHero"
 import WorkshopManagementNotes from "@/components/WorkshopManagement/WorkshopManagementNotes"
@@ -13,6 +14,7 @@ const ProductManagement = () => {
       <WorkshopManagementRoadmap />
       <Wave />
       <WorkshopManagementNotes />
+      <GetInTouch />
     </div>
   )
 }

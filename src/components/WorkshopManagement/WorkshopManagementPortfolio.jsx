@@ -78,7 +78,7 @@ const WorkshopManagementPortfolio = () => {
       <div className="grid grid-cols-4 gap-5 mt-20">
         {portfolios.map((portfolio, i) => {
           return (
-            <div className="p-5 rounded-xl text-center  bg-cgray flex flex-col gap-5">
+            <div key={i} className="p-5 rounded-xl text-center  bg-cgray flex flex-col gap-5">
               <div >
                 <Image className="w-full" src={portfolio.img} />
               </div>

@@ -5,7 +5,7 @@ import EmailIcon from "@/images/email.svg";
 import Image from "next/image";
 const GetInTouch = () => {
   return (
-    <div className="flex   w-3/4 m-auto my-20">
+    <div className="flex  py-5 w-3/4 m-auto my-20">
       <div className=" w-full space-y-5">
         <h2 className="font-bold text-5xl leading-relaxed">Get in Touch for Inquiries and Feedback</h2>
         <p className="text-clightGray leading-loose">
