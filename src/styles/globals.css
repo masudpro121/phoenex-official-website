@@ -31,3 +31,10 @@ h1{
   background-position: right;
   background-size: contain;
 }
+
+.community-hero{
+  background-image: url("../images/community-overview/hero_img.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
