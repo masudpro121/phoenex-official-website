@@ -65,6 +65,12 @@ const Navbar = () => {
     {
       title: 'Community',
       link: '/community',
+      sub:[
+        {
+          title: 'Profile Specific Community',
+          link: '/profile-specific-community'
+        }
+      ]
     },
   ]
 
@@ -93,7 +99,7 @@ const Navbar = () => {
                         category?.sub?.length>0 &&  <Image onClick={()=>{handleDropdown(category.link)}} className={dropdown==category.link ? 'rotate-180' :''} src={DropdownImg} />
                       }
                     </div>
-                    <div  className={`absolute  w-64 px-4 py-1 rounded-sm bg-stone-950 cursor-pointer top-10 space-y-4 py-2  ${dropdown!=category.link &&'hidden'}`}>
+                    <div  className={`absolute  w-64 px-4  rounded-sm bg-stone-950 cursor-pointer top-10 space-y-4 py-2  ${dropdown!=category.link &&'hidden'}`}>
                     {
                       category?.sub && category.sub.map((sub, j)=>{
 
