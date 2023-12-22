@@ -67,8 +67,8 @@ const Navbar = () => {
       link: '/community',
       sub:[
         {
-          title: 'Profile Specific Community',
-          link: '/profile-specific-community'
+          title: 'Project Specific Community',
+          link: '/project-specific-community'
         }
       ]
     },
