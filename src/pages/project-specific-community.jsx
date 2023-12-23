@@ -6,6 +6,7 @@ import ProjectSpecificManagement from "@/components/ProjectSpecificCommunity/Pro
 import ProjectSpecificNews from "@/components/ProjectSpecificCommunity/ProjectSpecificNews"
 import ProjectSpecificRoadmap from "@/components/ProjectSpecificCommunity/ProjectSpecificRoadmap"
 import ProjectSpecificSuccessStory from "@/components/ProjectSpecificCommunity/ProjectSpecificSuccessStory"
+import ProjectSpecificThoughts from "@/components/ProjectSpecificCommunity/ProjectSpecificThoughts"
 import React from 'react'
 
 const ProjectSpecificCommunityPage = () => {
@@ -18,6 +19,7 @@ const ProjectSpecificCommunityPage = () => {
       <ProjectSpecificRoadmap />
       <ProjectSpecificManagement />
       <ProjectSpecificSuccessStory />
+      <ProjectSpecificThoughts />
     </div>
   )
 }

@@ -7,7 +7,7 @@ p{
 }
 
 .blue-btn{
-  @apply bg-cblue px-5 py-2 rounded-lg font-semibold
+  @apply bg-cblue px-10 py-3 rounded-lg font-semibold 
 }
 
 h1{
