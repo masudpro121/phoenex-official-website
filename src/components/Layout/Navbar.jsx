@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DropdownImg from "@/images/dropdown.svg"
 import MenuImg from "@/images/menu.svg"
 import Image from "next/image";
@@ -104,7 +104,7 @@ const Navbar = () => {
                       category?.sub && category.sub.map((sub, j)=>{
 
                         return(
-                            <div key={i+j} > 
+                            <div key={i+j} onClick={()=>setDropdown("")} > 
                               <Link href={sub.link}>{sub.title}</Link>
                             </div>
                         )
@@ -120,7 +120,7 @@ const Navbar = () => {
             
             
             <div>
-              <button className="blue-btn">Contact Us</button>
+              <Link href="/contact-us"><button className="blue-btn">Contact Us</button></Link>
             </div>
           </div>
         </div>

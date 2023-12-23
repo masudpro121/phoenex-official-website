@@ -5,7 +5,7 @@ import EmailIcon from "@/images/email.svg";
 import Image from "next/image";
 const GetInTouch = () => {
   return (
-    <div className="flex  py-5 w-3/4 m-auto my-20">
+    <div className="flex items-center  py-5 w-3/4 m-auto my-20">
       <div className=" w-full space-y-5">
         <h2 className="font-bold text-5xl leading-relaxed">Get in Touch for Inquiries and Feedback</h2>
         <p className="text-clightGray leading-loose">
@@ -19,7 +19,7 @@ const GetInTouch = () => {
           </div>
           <p>New civil lines street#17 house NO # 7 </p>
         </div>
-        <div className="flex gap-5">
+        <div className="flex gap-5 pt-3">
           <div className="flex gap-2 items-center">
             <div>
               <Image className="w-7" src={CallIcon} />
@@ -36,20 +36,20 @@ const GetInTouch = () => {
       </div>
 
       <div className=" space-y-3">
-        <div>
-          <label htmlFor="">Full Name</label> <br/>
+        <div className="pt-2">
+          <label className="ml-1" htmlFor="">Full Name</label> <br/>
           <input className="bg-cgray  mt-1 w-96 px-3 py-2 rounded-md" type="text" placeholder="Enter your name here" />
         </div>
-        <div>
-          <label htmlFor="">Email</label> <br/>
+        <div className="pt-2">
+          <label className="ml-1" htmlFor="">Email</label> <br/>
           <input className="bg-cgray  mt-1 w-96 px-3 py-2 rounded-md" type="text" placeholder="Enter your email here" />
         </div>
-        <div>
-          <label htmlFor="">Subject</label> <br/>
+        <div className="pt-2">
+          <label className="ml-1" htmlFor="">Subject</label> <br/>
           <input className="bg-cgray  mt-1 w-96 px-3 py-2 rounded-md" type="text" placeholder="Enter topic here" />
         </div>
-        <div>
-          <label htmlFor="">Your message</label> <br/>
+        <div className="pt-2">
+          <label className="ml-1" htmlFor="">Your message</label> <br/>
           <textarea className="bg-cgray  mt-1 w-96 h-20 px-3 py-2 rounded-md" type="text" placeholder="Type here........" />
         </div>
         <button className="blue-btn ">Send Message</button>
