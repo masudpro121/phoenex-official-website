@@ -9,7 +9,7 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <div className="mt-20 text-lg">
-      <div className="flex bg-cgray p-20">
+      <div className=" space-y-10 md:flex gap-10 bg-cgray p-5 md:p-20">
         <div className="w-full">
           <div className="flex items-center">
             <Image className="h-16" src={Logo} />
