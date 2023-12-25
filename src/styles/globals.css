@@ -12,7 +12,7 @@ p{
 }
 
 h1{
-  @apply text-7xl font-bold 
+  @apply text-3xl md:text-7xl font-bold  
 }
 
 *{

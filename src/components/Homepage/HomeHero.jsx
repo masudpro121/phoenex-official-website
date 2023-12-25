@@ -9,14 +9,14 @@ import People5 from "@/images/home/people_5.svg"
 import People6 from "@/images/home/people_6.svg"
 function HomeHero() {
   return (
-    <div className="bg-cgray mx-20  rounded-3xl mt-10 flex">
-      <div className="p-20 w-full ">
+    <div className="bg-cgray mx-5 md:mx-20  rounded-3xl mt-10 flex flex-col-reverse md:flex-row items-center">
+      <div className="p-10 md:p-20 w-full ">
         <div className="space-y-5 ">
           <h1 className="leading-relaxed">Empowering <br/> Your Journey to <br/> Success</h1>
           <p className="text-clightGray text-lg leading-loose">We aim to enhance rational decision-making among individuals and  promote psychological well-being through technology research and information design</p>
           <button className="blue-btn">Explore Our Products</button>
         </div>
-        <div className="flex items-center mt-10 gap-x-4">
+        <div className="flex flex-col-reverse md:flex-row items-center mt-10 gap-x-4">
           <div className="flex -space-x-3 ">
             <Image className="w-14" src={People1} />
             <Image className="w-14" src={People2} />
@@ -25,13 +25,13 @@ function HomeHero() {
             <Image className="w-14" src={People5} />
             <Image className="w-14" src={People6} />
           </div>
-          <div>
+          <div className="text-center md:text-start mb-5 md:mb-0">
             <h3 className="text-2xl font-bold text-cblue">10M</h3>
             <p className="text-clightGray">Worldwide Users</p>
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className=" w-full mt-10 md:mt-0">
         <Image className="" src={HeroImg} />
       </div>
     </div>

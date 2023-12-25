@@ -3,9 +3,35 @@ import { Carousel } from "react-responsive-carousel";
 import Project1 from "@/images/home/project_1.png";
 import Project2 from "@/images/home/project_2.png";
 import Project3 from "@/images/home/project_3.png";
-
+import Slider from "react-slick";
 import Image from "next/image";
 const HomeProjects = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1228,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   const projects = [
     {
       img: Project1,
@@ -53,64 +79,63 @@ const HomeProjects = () => {
     },
   ];
   return (
-    <div>
-      <div className="px-28 pt-20">
-        <h1 >Ongoing Projects</h1>
-        <p className="text-xl mt-5">
+    <div className="m-10 md:m-20">
+      <div className="text-center md:text-start px-5 md:px-28 pt-20">
+        <h1 className="leading-normal" >Ongoing Projects</h1>
+        <p className="text-lg md:text-xl mt-5">
           Discover our ongoing projects incubated by PhoenEX.
         </p>
       </div>
-      <div className="mt-14 mx-20">
-        <Carousel
-          centerMode={true}
-          useKeyboardArrows={true}
-          centerSlidePercentage={33}
-          infiniteLoop={true}
-          showThumbs={false}
-          showIndicators={false}
+      <div className="mt-14 ">
+        <Slider
+          {...settings}
         >
           {projects.map((project, i) => {
             return (
-              <div key={i} className="bg-cgray mx-10 p-7 rounded-3xl text-left">
-                <div className="space-y-2">
-                  <Image src={project.img} />
-                  <h4 className="text-xl font-semibold">{project.title}</h4>
-                  <p className="text-clightGray">{project.description}</p>
-                </div>
-                <div className="space-y-2 mt-5 text-cwhite">
-                  {project.infos.map((info, j) => {
-                    return (
-                      <div key={info + j} className="flex gap-3">
-                        <div className="text-2xl font-bold ">.</div>
-                        <p className="leading-loose  text-sm" >{info}</p>
+              <div>
+                <div key={i} className="bg-cgray mx-2 md:mx-10 p-7 rounded-3xl text-left">
+                  <div className="space-y-2">
+                    <div className="flex justify-center mb-10">
+                      <Image className="w-full" src={project.img} />
+                    </div>
+                    <h4 className="text-xl font-semibold">{project.title}</h4>
+                    <p className="text-clightGray">{project.description}</p>
+                  </div>
+                  <div className="space-y-2 mt-5 text-cwhite">
+                    {project.infos.map((info, j) => {
+                      return (
+                        <div key={info + j} className="flex gap-3">
+                          <div className="text-2xl font-bold ">.</div>
+                          <p className="leading-loose  text-sm" >{info}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div className="hidden md:block space-y-4 mt-5">
+                    <div> 
+                      <p className="font-semibold  ">
+                        <span className="text-cblue">14 days </span>
+                        and
+                        <span className="text-cblue"> 08:45:30 </span>
+                        left for this Round
+                      </p>
+                    </div>
+                    <div className="w-full  bg-gray-200 rounded-full h-3 dark:bg-gray-700">
+                      <div className="bg-cblue h-full rounded-full w-[80%]"></div>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <button className="text-cblue font-semibold text-lg border-2 rounded-lg px-5  border-cblue py-2.5">Learn more</button>
+                      <div>
+                        <p className="font-bold text-2xl text-cblue">86%</p>
+                        <p className="font-semibold text-clightGray">In Progress</p>
                       </div>
-                    );
-                  })}
-                </div>
-                <div className="space-y-4 mt-5">
-                  <div> 
-                    <p className="font-semibold  ">
-                      <span className="text-cblue">14 days </span>
-                      and
-                      <span className="text-cblue"> 08:45:30 </span>
-                      left for this Round
-                    </p>
-                  </div>
-                  <div className="w-full  bg-gray-200 rounded-full h-3 dark:bg-gray-700">
-                    <div className="bg-cblue h-full rounded-full w-[80%]"></div>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <button className="text-cblue font-semibold text-lg border-2 rounded-lg px-5  border-cblue py-2.5">Learn more</button>
-                    <div>
-                      <p className="font-bold text-2xl text-cblue">86%</p>
-                      <p className="font-semibold text-clightGray">In Progress</p>
                     </div>
                   </div>
                 </div>
               </div>
             );
           })}
-        </Carousel>
+        </Slider>
       </div>
     </div>
   );
