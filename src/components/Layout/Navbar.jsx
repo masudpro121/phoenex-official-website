@@ -132,7 +132,7 @@ const Navbar = () => {
         </div>
 
         {/* Small Device Navbar  */}
-        <div className="text-right pt-3">
+        <div className="2xl:hidden text-right pt-3">
           {
             isMenuOpen ? (
               <div>

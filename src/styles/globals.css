@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 p{
-  @apply m-0
+  @apply m-0 leading-loose
 }
 
 .blue-btn{
@@ -11,11 +12,12 @@ p{
 }
 
 h1{
-  @apply text-7xl font-bold
+  @apply text-7xl font-bold 
 }
 
 *{
   font-family: 'Poppins', sans-serif;
+  @apply text-base
 }
 
 .product-hero-bg{
