@@ -2,9 +2,36 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import Project1 from "@/images/home/project_1.png";
 import LocationImg from "@/images/home/fund_location.svg";
-
+import Slider from "react-slick";
 import Image from "next/image";
+
 const HomeFundraising = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1228,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   const projects = [
     {
       img: Project1,
@@ -53,63 +80,58 @@ const HomeFundraising = () => {
     
   ];
   return (
-    <div>
-      <div className="px-28 pt-20">
+    <div className="m-7 md:m-20">
+      <div className="px-5 text-center md:text-start md:px-28 pt-20">
         <h1 >Fundraising Opportunities</h1>
         <p className="text-xl mt-5">
           Explore investment opportunities with PhoenEX.
         </p>
       </div>
-      <div className="mt-14 mx-20">
-        <Carousel
-          centerMode={true}
-          useKeyboardArrows={true}
-          centerSlidePercentage={33}
-          infiniteLoop={true}
-          showThumbs={false}
-          showIndicators={false}
-        >
+      <div className="mt-14 ">
+        <Slider {...settings} >
           {projects.map((project, i) => {
             return (
-              <div key={i} className="bg-cgray mx-10 p-7 rounded-3xl text-left">
-                <div className="space-y-2">
-                  <Image src={project.img} />
-                  <h4 className="text-xl font-semibold">{project.title}</h4>
-                  <p className="text-clightGray">{project.description}</p>
-                </div>
-                <div className="space-y-2 mt-5 text-clightGray">
-                  {project.infos.map((info, j) => {
-                    return (
-                      <div key={info + j} className="flex gap-3 text-cwhite">
-                        <div className="text-2xl font-bold ">.</div>
-                        <p className="text-sm leading-loose">{info}</p>
+              <div key={i}>
+                <div  className="bg-cgray mx-1 md:mx-10 p-7 rounded-3xl text-left">
+                  <div className="space-y-2 text-center md:text-start">
+                    <Image src={project.img} />
+                    <h4 className="text-xl font-semibold pt-4 md:pt-0">{project.title}</h4>
+                    <p className="text-clightGray">{project.description}</p>
+                  </div>
+                  <div className="space-y-2 mt-5 text-clightGray">
+                    {project.infos.map((info, j) => {
+                      return (
+                        <div key={info + j} className="flex gap-3 text-cwhite">
+                          <div className="text-2xl font-bold ">.</div>
+                          <p className="text-sm leading-loose">{info}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div className=" hidden md:flex justify-between mt-5">
+                    <div className="space-y-1">
+                      <p>Min per Investor</p>
+                      <h2 className="text-4xl font-semibold">$9.5M</h2>
+                    </div>
+                    <div className="space-y-1">
+                      <p>Total Required</p>
+                      <h2 className="text-4xl font-semibold">$20M</h2>
+                    </div>
+                  </div>
+                  <div className="hidden md:flex justify-between items-center mt-8">
+                      <div>
+                        <button className="text-cblue font-semibold text-lg border-2 rounded-lg px-5   border-cblue py-2.5">Learn more</button>
                       </div>
-                    );
-                  })}
-                </div>
-                <div className="flex justify-between mt-5">
-                  <div className="space-y-1">
-                    <p>Min per Investor</p>
-                    <h2 className="text-4xl font-semibold">$9.5M</h2>
-                  </div>
-                  <div className="space-y-1">
-                    <p>Total Required</p>
-                    <h2 className="text-4xl font-semibold">$20M</h2>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center mt-8">
-                    <div>
-                      <button className="text-cblue font-semibold text-lg border-2 rounded-lg px-5   border-cblue py-2.5">Learn more</button>
+                      <div className="flex items-center gap-1">
+                        <div><Image className="" src={LocationImg} /></div>
+                        <p className="font-semibold w-full  text-cblue">Victoria, Australia</p>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-1">
-                      <div><Image className="" src={LocationImg} /></div>
-                      <p className="font-semibold w-full  text-cblue">Victoria, Australia</p>
-                    </div>
-                  </div>
+                </div>
               </div>
             );
           })}
-        </Carousel>
+        </Slider>
       </div>
     </div>
   );

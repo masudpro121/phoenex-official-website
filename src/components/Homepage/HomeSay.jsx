@@ -22,9 +22,9 @@ const HomeSay = () => {
     },
   ]
   return (
-    <div className="m-20 bg-cgray p-20 rounded-xl">
-      <h2 className="text-5xl font-bold">What Our Users Say</h2>
-      <div className="flex mt-16">
+    <div className="m-10 md:m-20 bg-cgray p-5 md:p-20 rounded-xl">
+      <h2 className="text-3xl md:text-5xl font-bold text-center md:text-start">What Our Users Say</h2>
+      <div className="flex flex-col-reverse gap-20 md:flex-row md:gap-0 mt-16">
         <div className="w-full space-y-8">
           {
             users.map((user, i)=>{
@@ -42,7 +42,7 @@ const HomeSay = () => {
             })
           }
         </div>
-        <div className="w-full space-y-10">
+        <div className="w-full space-y-10 text-center md:text-start">
           <div >
             <p className="text-3xl font-bold">Exceptional Service, Incredible Results</p>
             <p className="mt-3">⭐⭐⭐⭐⭐</p>
