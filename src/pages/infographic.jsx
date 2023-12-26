@@ -56,7 +56,7 @@ const Infographic = () => {
     },
   ]
   return (
-    <div className="flex m-20 gap-20">
+    <div className="flex flex-col md:flex-row m-10 md:m-20 gap-20">
       <div className="w-full space-y-4">
         <h1>Problem-Solving Steps</h1>
         <p className="font-semibold text-cblue">Innovate, Iterate, Impact</p>
