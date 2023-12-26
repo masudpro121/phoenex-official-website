@@ -10,20 +10,20 @@ import Image from "next/image"
 const WorkshopPast = () => {
   
   return (
-    <div className="m-20">
+    <div className="m-5 lg:m-20">
       <div className="text-center">
         <h1>Past Events</h1>
         <p className="text-clightGray py-7">Missed out on previous events? Catch up on the highlights and success stories from our past gatherings, celebrating the spirit of innovation.</p>
       </div>
       
-      <div className="grid grid-cols-4 gap-10 mt-10">
-        <Image src={Event1} />
-        <Image className="col-span-2" src={Event2} />
-        <Image src={Event3} />
+      <div className="grid grid-cols-1 m-a lg:grid-cols-4 gap-10 mt-10">
+        <Image className=" m-auto" src={Event1} />
+        <Image  className=" m-auto lg:col-span-2" src={Event2} />
+        <Image className=" m-auto" src={Event3} />
       </div>
-      <div className="grid grid-cols-2 gap-10 mt-10">
-        <Image src={Event4} />
-        <Image src={Event5} />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10">
+        <Image className=" m-auto" src={Event4} />
+        <Image className=" m-auto" src={Event5} />
       </div>
     </div>
   )

@@ -8,7 +8,7 @@ const GetInTouch = () => {
     <div className="flex flex-col  lg:flex-row gap-20  items-center  py-5 w-3/4 m-auto my-20">
       <div className=" w-full space-y-5">
         <div className="text-center lg:text-start">
-          <p className="font-bold text-3xl lg:text-5xl line-clamp-4">Get in Touch for Inquiries and Feedback</p>
+          <p className="font-bold text-3xl lg:text-5xl ">Get in Touch for Inquiries and Feedback</p>
           <p className="text-clightGray leading-loose mt-4">
             Your Questions, Feedback, and Inquiries Matter! Use the Form to Share
             Your<br/> Thoughts, and Our Team Will Get Back to You Promptly. We
