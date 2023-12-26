@@ -22,9 +22,9 @@ const IndPortfolioUserSay = () => {
     },
   ]
   return (
-    <div className="m-20 p-20 rounded-3xl bg-cgray">
+    <div className="m-5 md:m-20 p-10 md:p-20 rounded-3xl bg-cgray">
       <h2 className="text-5xl font-bold">What Users Say</h2>
-      <div className="flex items-center">
+      <div className="flex flex-col-reverse md:flex-row mt-10 items-center">
         <div className="w-full">
           {
             users.map((user, i)=>{
