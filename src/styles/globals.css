@@ -8,11 +8,11 @@ p{
 }
 
 .blue-btn{
-  @apply bg-cblue px-5 md:px-10 py-3 rounded-lg font-semibold 
+  @apply bg-cblue px-5 lg:px-10 py-3 rounded-lg font-semibold 
 }
 
 h1{
-  @apply text-3xl md:text-7xl font-bold  
+  @apply text-3xl lg:text-7xl font-bold  
 }
 
 *{

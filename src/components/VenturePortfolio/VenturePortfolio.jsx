@@ -68,7 +68,7 @@ const VenturePortfolio = () => {
     },
   ];
   return (
-    <div className="m-10 md:m-20">
+    <div className="m-10 lg:m-20">
       <div className="text-center">
         <h1>Our Portfolio</h1>
         <p className="text-clightGray mt-5">
@@ -77,7 +77,7 @@ const VenturePortfolio = () => {
           align with our <br /> mission and vision.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-5 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-5 mt-10">
         {portfolios.map((portfolio, i) => {
           return (
             <div className="p-5 rounded-xl text-center  bg-cgray flex flex-col gap-5">

@@ -82,11 +82,11 @@ const Navbar = () => {
   console.log(dropdown, "dropdown");
   return (
     <div className="max-w-[1920px] m-auto">
-      <div className="flex 2xl:items-center justify-between gap-4 mx-4 md:mx-10 py-1">
+      <div className="flex 2xl:items-center justify-between gap-4 mx-4 lg:mx-10 py-1">
         <Link href="/">
           <div className="flex items-center">
             <Image className="h-16" src={Logo} />
-            <h3 className="hidden md:block text-2xl font-bold text-cwhite">PhoenEx</h3>
+            <h3 className="hidden lg:block text-2xl font-bold text-cwhite">PhoenEx</h3>
           </div>
         </Link>
 

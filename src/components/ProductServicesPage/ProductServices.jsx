@@ -41,7 +41,7 @@ const ProductServices = () => {
     
   ]
   return (
-    <div className="m-5 md:m-20">
+    <div className="m-5 lg:m-20">
       <div className="text-center">
         <h2 className="font-bold text-5xl">Expert Services</h2>
         <p className="text-clightGray mt-5">Empowering Your Journey with Unrivaled Expert Services: Where Precision Meets Proficiency in Crafting Tailored Solutions for Your Unique Needs and Challenges.</p>
@@ -50,9 +50,9 @@ const ProductServices = () => {
         {
           services.map((service, i)=>{
             return(
-              <div key={i} className={`flex my-20 md:my-10 gap-10 md:gap-40 items-center ${(i+1)%2==0?'md:flex-row-reverse flex-col-reverse':'flex-col-reverse md:flex-row'}`}>
+              <div key={i} className={`flex my-20 lg:my-10 gap-10 lg:gap-40 items-center ${(i+1)%2==0?'lg:flex-row-reverse flex-col-reverse':'flex-col-reverse lg:flex-row'}`}>
                 <div className="w-full flex justify-center">
-                  <Image className="w-[80%] md:w-full" src={service.img} />
+                  <Image className="w-[80%] lg:w-full" src={service.img} />
                 </div>
                 <div className="w-full space-y-3">
                   <h2 className="text-cgray text-9xl font-bold">{service.serial}</h2>

@@ -11,8 +11,8 @@ const IndividualPortfolioPage = () => {
       <IndPortfolioHero />
       <IndPortfolioDetails />
       <IndPortfolioUserSay />
-      {/* <IndPortfolioExplore /> */}
-      {/* <GetInTouch /> */}
+      <IndPortfolioExplore />
+      <GetInTouch />
     </div>
   )
 }

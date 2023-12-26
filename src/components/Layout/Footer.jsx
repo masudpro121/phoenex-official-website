@@ -9,7 +9,7 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <div className="mt-20 text-lg">
-      <div className=" space-y-10 md:flex gap-10 bg-cgray p-5 md:p-20">
+      <div className=" space-y-10 lg:flex gap-10 bg-cgray p-5 lg:p-20">
         <div className="w-full">
           <div className="flex items-center">
             <Image className="h-16" src={Logo} />
@@ -42,15 +42,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full space-y-4">
-          <div className="text-center md:text-left">
+          <div className="text-center lg:text-left">
             <h3 className="text-2xl font-semibold">Newsletter</h3>
             <p className="text-clightGray mt-2">Connecting You with the Latest</p>
           </div>
           <div className="flex gap-3  items-center">
-            <input className="text-sm pl-7 rounded-xl bg-cdark md:w-1/2 py-4" type="text" placeholder="Enter your Email" />
+            <input className="text-sm pl-7 rounded-xl bg-cdark lg:w-1/2 py-4" type="text" placeholder="Enter your Email" />
             <button className="blue-btn">Send</button>
           </div>
-          <div className="pt-6 flex md:block justify-center text-center md:text-left">
+          <div className="pt-6 flex lg:block justify-center text-center lg:text-left">
             <div>
               <h4 className="font-semibold ">Follow us on:</h4>
               <div className="flex gap-5 mt-3">
@@ -63,8 +63,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-center px-5 text-center md:text-left py-4 bg-cblue">
-        <p className=" md:font-semibold">© 2023 Copyright by PhoenEx. All rights reserved.</p>
+      <div className="flex justify-center px-5 text-center lg:text-left py-4 bg-cblue">
+        <p className=" lg:font-semibold">© 2023 Copyright by PhoenEx. All rights reserved.</p>
       </div>
     </div>
   )

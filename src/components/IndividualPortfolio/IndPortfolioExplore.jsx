@@ -14,6 +14,24 @@ const IndPortfolioExplore = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1228,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   const portfolios = [
     {
@@ -74,14 +92,14 @@ const IndPortfolioExplore = () => {
     },
   ];
   return (
-    <div className="m-20">
-      <h2 className="text-5xl font-bold">Explore more Portfolios</h2>
+    <div className="m-8 lg:m-20">
+      <h2 className="text-3xl text-center lg:text-start lg:text-5xl font-bold">Explore more Portfolios</h2>
       <div className="mt-10">
       <Slider {...settings} >
           {
             portfolios.map((portfolio, i) => {
               return (
-                <div key={i} className="p-5 h-[720px]   text-center  ">
+                <div key={i} className="p-1 h-[720px]   text-center  ">
                   <div className="h-full bg-cgray rounded-2xl">
                     <div className="p-5">
                       <Image className="w-full" src={portfolio.img} />
@@ -94,7 +112,7 @@ const IndPortfolioExplore = () => {
                         </p>
                       </div>
                       <div>
-                        <button className="blue-btn ">Find out more</button>
+                        <button className="blue-btn  mt-5">Find out more</button>
                       </div>
                     </div>
                   </div>

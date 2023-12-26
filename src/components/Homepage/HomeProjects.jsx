@@ -79,10 +79,10 @@ const HomeProjects = () => {
     },
   ];
   return (
-    <div className="m-5 md:m-20">
-      <div className="text-center md:text-start px-5 md:px-28 pt-20">
+    <div className="m-5 lg:m-20">
+      <div className="text-center lg:text-start px-5 lg:px-28 pt-20">
         <h1 className="leading-normal" >Ongoing Projects</h1>
-        <p className="text-lg md:text-xl mt-5">
+        <p className="text-lg lg:text-xl mt-5">
           Discover our ongoing projects incubated by PhoenEX.
         </p>
       </div>
@@ -93,7 +93,7 @@ const HomeProjects = () => {
           {projects.map((project, i) => {
             return (
               <div>
-                <div key={i} className="bg-cgray mx-2 md:mx-10 p-7 rounded-3xl text-left">
+                <div key={i} className="bg-cgray mx-2 lg:mx-10 p-7 rounded-3xl text-left">
                   <div className="space-y-2">
                     <div className="flex justify-center mb-10">
                       <Image className="w-full" src={project.img} />
@@ -111,7 +111,7 @@ const HomeProjects = () => {
                       );
                     })}
                   </div>
-                  <div className="hidden md:block space-y-4 mt-5">
+                  <div className="hidden lg:block space-y-4 mt-5">
                     <div> 
                       <p className="font-semibold  ">
                         <span className="text-cblue">14 days </span>

@@ -22,9 +22,9 @@ const HomeSay = () => {
     },
   ]
   return (
-    <div className="m-5 md:m-20 bg-cgray p-5 md:p-20 rounded-xl">
-      <h2 className="text-3xl md:text-5xl font-bold text-center md:text-start">What Our Users Say</h2>
-      <div className="flex flex-col-reverse gap-20 md:flex-row md:gap-0 mt-16">
+    <div className="m-5 lg:m-20 bg-cgray p-5 lg:p-20 rounded-xl">
+      <h2 className="text-3xl lg:text-5xl font-bold text-center lg:text-start">What Our Users Say</h2>
+      <div className="flex flex-col-reverse gap-20 lg:flex-row lg:gap-0 mt-16">
         <div className="w-full space-y-8">
           {
             users.map((user, i)=>{
@@ -34,7 +34,7 @@ const HomeSay = () => {
                     <Image className="w-20" src={user.img} />
                   </div>
                   <div>
-                    <p className="text-lg md:text-xl font-semibold">{user.name}</p>
+                    <p className="text-lg lg:text-xl font-semibold">{user.name}</p>
                     <p className="text-clightGray">{user.title}</p>
                   </div>
                 </div>
@@ -42,7 +42,7 @@ const HomeSay = () => {
             })
           }
         </div>
-        <div className="w-full space-y-10 text-center md:text-start">
+        <div className="w-full space-y-10 text-center lg:text-start">
           <div >
             <p className="text-3xl font-bold">Exceptional Service, Incredible Results</p>
             <p className="mt-3">⭐⭐⭐⭐⭐</p>

@@ -80,8 +80,8 @@ const HomeFundraising = () => {
     
   ];
   return (
-    <div className="m-7 md:m-20">
-      <div className="px-5 text-center md:text-start md:px-28 pt-20">
+    <div className="m-7 lg:m-20">
+      <div className="px-5 text-center lg:text-start lg:px-28 pt-20">
         <h1 >Fundraising Opportunities</h1>
         <p className="text-xl mt-5">
           Explore investment opportunities with PhoenEX.
@@ -92,10 +92,10 @@ const HomeFundraising = () => {
           {projects.map((project, i) => {
             return (
               <div key={i}>
-                <div  className="bg-cgray mx-1 md:mx-10 p-7 rounded-3xl text-left">
-                  <div className="space-y-2 text-center md:text-start">
+                <div  className="bg-cgray mx-1 lg:mx-10 p-7 rounded-3xl text-left">
+                  <div className="space-y-2 text-center lg:text-start">
                     <Image src={project.img} />
-                    <h4 className="text-xl font-semibold pt-4 md:pt-0">{project.title}</h4>
+                    <h4 className="text-xl font-semibold pt-4 lg:pt-0">{project.title}</h4>
                     <p className="text-clightGray">{project.description}</p>
                   </div>
                   <div className="space-y-2 mt-5 text-clightGray">
@@ -108,7 +108,7 @@ const HomeFundraising = () => {
                       );
                     })}
                   </div>
-                  <div className=" hidden md:flex justify-between mt-5">
+                  <div className=" hidden lg:flex justify-between mt-5">
                     <div className="space-y-1">
                       <p>Min per Investor</p>
                       <h2 className="text-4xl font-semibold">$9.5M</h2>
@@ -118,7 +118,7 @@ const HomeFundraising = () => {
                       <h2 className="text-4xl font-semibold">$20M</h2>
                     </div>
                   </div>
-                  <div className="hidden md:flex justify-between items-center mt-8">
+                  <div className="hidden lg:flex justify-between items-center mt-8">
                       <div>
                         <button className="text-cblue font-semibold text-lg border-2 rounded-lg px-5   border-cblue py-2.5">Learn more</button>
                       </div>

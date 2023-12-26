@@ -124,8 +124,8 @@ const IndPortfolioDetails = () => {
 
   }
   return (
-    <div className="m-5 my-20 md:m-20 flex gap-5  md:gap-20">
-      <div  className="hidden md:block w-1/3">
+    <div className="m-5 my-20 lg:m-20 flex gap-5  lg:gap-20">
+      <div  className="hidden lg:block w-1/3">
         <div className="flex  flex-col space-y-10 bg-cgray p-10 rounded-xl">
           <Link href="#description">Description</Link>
           <Link href="#investmentOpportunity">Investment Opportunity</Link>
@@ -140,23 +140,23 @@ const IndPortfolioDetails = () => {
         <div id="description">
           <div >
             <h2 className="text-3xl font-semibold">Description</h2>
-            <p className="text-clightGray mt-5 text-lg md:text-xl leading-loose">{details.incubation.description}</p>
+            <p className="text-clightGray mt-5 text-lg lg:text-xl leading-loose">{details.incubation.description}</p>
           </div>
         </div>
 
         <div id="investmentOpportunity">
           <div >
             <h2 className="text-3xl font-semibold">Investment Opportunity</h2>
-            <p className="text-clightGray mt-5 text-lg md:text-xl leading-loose">{details.investmentOpportunity}</p>
+            <p className="text-clightGray mt-5 text-lg lg:text-xl leading-loose">{details.investmentOpportunity}</p>
           </div>
         </div>
 
         <div id="incubationService">
           <div >
             <h2 className="text-3xl font-semibold">Incubation Services</h2>
-            <p className="text-clightGray mt-5 text-lg md:text-xl leading-loose">{details.investmentOpportunity}</p>
+            <p className="text-clightGray mt-5 text-lg lg:text-xl leading-loose">{details.investmentOpportunity}</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-7">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-7">
           {
             details.incubation.services.map((service, i)=>{
               return(
@@ -165,7 +165,7 @@ const IndPortfolioDetails = () => {
                     <Image src={service.icon} />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg md:text-xl">{service.title}</p>
+                    <p className="font-semibold text-lg lg:text-xl">{service.title}</p>
                   </div>
                 </div>
               )
@@ -176,22 +176,22 @@ const IndPortfolioDetails = () => {
 
         <div id="informationVisuals">
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold">Visuals</h2>
-            <p className="text-clightGray mt-5 text-lg md:text-xl leading-loose">{details.visuals.description}</p>
+            <h2 className="text-2xl lg:text-3xl font-semibold">Visuals</h2>
+            <p className="text-clightGray mt-5 text-lg lg:text-xl leading-loose">{details.visuals.description}</p>
           </div>
-          <div className="md:flex gap-5 mt-5">
+          <div className="lg:flex gap-5 mt-5">
             {
               details.visuals.images.slice(0,2).map((img, i)=>{
                 return(
-                    <div className="w-full my-5 md:my-0">
-                      <Image key={i} className="w-full h-64 rounded-xl object-cover" src={img} />
+                    <div key={i} className="w-full my-5 lg:my-0">
+                      <Image  className="w-full h-64 rounded-xl object-cover" src={img} />
                     </div>
                 )
               })
             }
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
             {
               details.visuals.images.slice(2,5).map((img, i)=>{
                 return(
