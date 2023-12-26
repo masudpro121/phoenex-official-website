@@ -31,7 +31,7 @@ const ResearchHero = () => {
     },
   ]
   return (
-    <div className="m-20">
+    <div className="m-5 lg:m-20">
       <div className="text-center space-y-5">
         <h1>PhoenEX Research</h1>
         <p className="text-clightGray">
@@ -39,7 +39,7 @@ const ResearchHero = () => {
         </p>
       </div>
       <Image className="mt-10" src={HeroImg} />
-      <div className="mt-20 grid grid-cols-3 gap-10 justify-items-center">
+      <div className="mt-20 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
         {
           steps.map((step, i)=>{
             return(

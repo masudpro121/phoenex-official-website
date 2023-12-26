@@ -28,16 +28,16 @@ const ResearchExplore = () => {
     },
   ]
   return (
-    <div className="m-20">
-      <div className="flex items-center">
-        <h2 className="text-6xl font-bold w-full ">Explore Our Research Themes</h2>
+    <div className="m-5 lg:m-20">
+      <div className="flex flex-col lg:flex-row  gap-7 text-center lg:text-start items-center">
+        <h2 className="text-3xl lg:text-6xl font-bold w-full ">Explore Our Research Themes</h2>
         <p className="w-full text-clightGray leading-8">
           Each thematic block represents a distinct avenue of exploration, showcasing the diversity and depth of our
           groundbreaking research initiatives. Embark on a journey of discovery as we unveil the core themes that drive our 
           quest for knowledge and transformation.
         </p>
       </div> 
-      <div className="bg-cgray grid grid-cols-3 gap-5 p-7 rounded-xl my-10 text-center">
+      <div className="bg-cgray grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-7 rounded-xl my-10 text-center">
         <div className="bg-cblue py-3 rounded-2xl font-semibold">Edtech Solutions</div>
         <div className="bg-cdark py-3 rounded-2xl">Fintech Solutions</div>
         <div className="bg-cdark py-3 rounded-2xl">Martech Solutions</div>
@@ -46,7 +46,7 @@ const ResearchExplore = () => {
         <div className="bg-cdark py-3 rounded-2xl">Immersive Experiences Device</div>
       </div> 
 
-      <div className="mt-10 grid grid-cols-2 gap-10">
+      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
         {
           researches.map((research, i)=>{
             return(
