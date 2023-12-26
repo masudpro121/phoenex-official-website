@@ -12,7 +12,7 @@ const ProductServicesPage = () => {
       <ProductInnovative />
       <Wave />
       <ProductServices />
-      <ProductElavate />
+      <ProductElavate /> 
     </div>
   )
 }

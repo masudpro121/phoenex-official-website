@@ -19,12 +19,12 @@ h1{
   font-family: 'Poppins', sans-serif;
   @apply text-base
 }
-
 .product-hero-bg{
   background-image: url("../images/product-services/hero_img.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  
 }
 
 .workshop-hero-bg{
@@ -39,4 +39,11 @@ h1{
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+}
+
+
+@media screen and (max-width: 768px) {
+  .product-hero-bg, .workshop-hero-bg, .community-hero{
+    background-image: none;
+  }
 }
