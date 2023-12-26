@@ -29,19 +29,19 @@ const ResearchEconomicsHero = () => {
     },
   ]
   return (
-    <div className="m-20">
+    <div className="m-5 lg:m-20">
       <div className="text-center leading-loose">
         <h1>Behavioral Economics Research</h1>
         <p className="mt-8">Delve into the intricate realm of Behavioral Economics, where we unravel the complexities of human decision-making. <br/> Understand its societal impact and explore avenues for transformative change.</p>
       </div>
-      <div className="flex gap-10 mt-14">
-        <div className="w-1/2">
+      <div className="flex flex-col-reverse lg:flex-row gap-10 mt-14">
+        <div className="lg:w-1/2">
           {
             datas.map((data, i)=>{
               return(
                 <div key={i} className={`px-7 py-5 ${data.title == accordion ? 'bg-cgray rounded-xl': ''}`}>
                   <div className="flex items-center gap-3 cursor-pointer"  onClick={()=>setAccordion(data.title)}>
-                    <p className={`text-xl  ${data.title == accordion? 'text-cblue': ''}`} >
+                    <p className={`text-lg lg:text-xl  ${data.title == accordion? 'text-cblue': ''}`} >
                         {data.title}
                     </p>
                     <Image className={` ${data.title == accordion? 'rotate-180': ''}`} src={DropdownImg} />

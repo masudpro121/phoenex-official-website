@@ -10,9 +10,7 @@ const ResearchAndDevelopmentEconomics = () => {
       <ResearchEconomicsHero />
       <ResearchThesis />
       <ResearchTeamDirector />
-      <div className="pt-10">
       <GetInTouch />
-      </div>
     </div>
   )
 }
