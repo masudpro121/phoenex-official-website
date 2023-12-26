@@ -22,7 +22,7 @@ const HomeSay = () => {
     },
   ]
   return (
-    <div className="m-10 md:m-20 bg-cgray p-5 md:p-20 rounded-xl">
+    <div className="m-5 md:m-20 bg-cgray p-5 md:p-20 rounded-xl">
       <h2 className="text-3xl md:text-5xl font-bold text-center md:text-start">What Our Users Say</h2>
       <div className="flex flex-col-reverse gap-20 md:flex-row md:gap-0 mt-16">
         <div className="w-full space-y-8">
@@ -34,7 +34,7 @@ const HomeSay = () => {
                     <Image className="w-20" src={user.img} />
                   </div>
                   <div>
-                    <p className="text-xl font-semibold">{user.name}</p>
+                    <p className="text-lg md:text-xl font-semibold">{user.name}</p>
                     <p className="text-clightGray">{user.title}</p>
                   </div>
                 </div>

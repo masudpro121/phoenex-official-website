@@ -79,14 +79,14 @@ const HomeProjects = () => {
     },
   ];
   return (
-    <div className="m-10 md:m-20">
+    <div className="m-5 md:m-20">
       <div className="text-center md:text-start px-5 md:px-28 pt-20">
         <h1 className="leading-normal" >Ongoing Projects</h1>
         <p className="text-lg md:text-xl mt-5">
           Discover our ongoing projects incubated by PhoenEX.
         </p>
       </div>
-      <div className="mt-14 ">
+      <div className="mt-14  mx-2">
         <Slider
           {...settings}
         >
