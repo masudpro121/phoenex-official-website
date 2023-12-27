@@ -143,7 +143,7 @@ const Navbar = () => {
                 {
                   categories.map((category, i)=>{
                     return(
-                      <>
+                      <div key={i}>
                       <div className="flex justify-end gap-5">
                         <Link href={category.link}>{category.title}</Link>
                         {category?.sub?.length > 0 && (
@@ -171,7 +171,7 @@ const Navbar = () => {
                               );
                             })}
                         </div>
-                      </>
+                      </div>
                       
                     )
                   })

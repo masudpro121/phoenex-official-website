@@ -20,16 +20,18 @@ const IncubationProgress = () => {
     },
   ]
   return (
-    <div className="m-20">
+    <div className="mx-5 my-10 lg:m-20">
+      <div className="text-center lg:text-start">
       <h2 className="text-2xl font-bold">Program Progress</h2>
       <p className="text-clightGray mt-5 pb-7">Track the incredible journey of our ongoing incubation projects, marked by key milestones and breakthrough moments.</p>
-      <div className="flex gap-10 mt-20 relative ">
+      </div>
+      <div className="flex flex-col lg:flex-row gap-10 mt-20 relative ">
         <div className="absolute w-full h-3 rounded-lg bg-cgray -top-10"></div>
         {
           progresses.map((progress, i)=>{
             return(
               <div className="mt-5">
-                <div className="absolute w-7 h-7 -top-12 rounded-full bg-cblue "></div>
+                <div className="hidden lg:block absolute w-7 h-7 -top-12 rounded-full bg-cblue "></div>
                 <p className="font-semibold text-xl text-cblue">{progress.title}</p>
                 <p className="text-clightGray leading-loose mt-3">{progress.description}</p>
               </div>
