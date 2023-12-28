@@ -28,17 +28,17 @@ const IncubationStep = () => {
   return (
     <div className="m-5 lg:m-20">
       <div className="text-center">
-        <h2 className="text-5xl">Take the First Step Towards Success!</h2>
-        <p className="text-clightGray">Apply now and embark on a transformative journey with PhoenEX's Incubation Program.</p>
+        <h2 className="text-3xl lg:text-5xl">Take the First Step Towards Success!</h2>
+        <p className="text-clightGray mt-10">Apply now and embark on a transformative journey with PhoenEX's Incubation Program.</p>
       </div>
       <div className="mt-10 lg:mt-0">
         {
           steps.map((step, i)=>{
             return(
-              <div key={i} className={` py-20 lg:py-0 flex items-center gap-0 lg:gap-20 ${(i+1)%2==0?'flex-col lg:flex-row-reverse': 'flex-col lg:flex-row'}`}>
+              <div key={i} className={` py-20 lg:py-0 flex items-center gap-5 lg:gap-20 ${(i+1)%2==0?'flex-col lg:flex-row-reverse': 'flex-col lg:flex-row'}`}>
                 <div className="w-full p-5 lg:p-10">
-                  <p className="leading-tight"><span className="text-[200px] font-bold text-cgray">{step.serial}</span> <span className="text-cblue font-semibold">STEP</span></p>
-                  <h2 className="text-4xl font-bold mt-5">{step.title}</h2>
+                  <p className="leading-tight"><span className="text-[100px] lg:text-[200px] font-bold text-cgray">{step.serial}</span> <span className="text-cblue font-semibold">STEP</span></p>
+                  <h2 className="text-2xl lg:text-4xl font-bold mt-5">{step.title}</h2>
                   <p className="text-clightGray leading-loose mt-3">{step.description}</p>
                 </div>
                 <div className="w-full flex justify-center lg:p-20">

@@ -12,8 +12,8 @@ const IncubationProgram = () => {
       <IncubationProgress />
       <Wave  />
       <IncubationStep />
-      {/* <IncubationSuccess /> */}
-      {/* <IncubationTestimonials /> */}
+      <IncubationSuccess />
+      <IncubationTestimonials />
     </div>
   )
 }

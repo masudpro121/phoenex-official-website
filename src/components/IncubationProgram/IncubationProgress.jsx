@@ -30,7 +30,7 @@ const IncubationProgress = () => {
         {
           progresses.map((progress, i)=>{
             return(
-              <div className="mt-5">
+              <div key={i} className="mt-5">
                 <div className="hidden lg:block absolute w-7 h-7 -top-12 rounded-full bg-cblue "></div>
                 <p className="font-semibold text-xl text-cblue">{progress.title}</p>
                 <p className="text-clightGray leading-loose mt-3">{progress.description}</p>

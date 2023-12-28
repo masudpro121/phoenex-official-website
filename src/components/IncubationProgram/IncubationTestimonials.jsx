@@ -10,7 +10,14 @@ const IncubationTestimonials = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: "260px",
+    responsive: [
+      {
+        breakpoint: 1228,
+        settings: {
+          centerMode:false
+        }
+      }
+    ]
   };
   const testimonials = [
     {
@@ -33,7 +40,7 @@ const IncubationTestimonials = () => {
     },
   ]
   return (
-    <div className="m-20">
+    <div className="m-8 lg:m-20">
       <div className="text-center">
         <h2 className="text-5xl font-bold">Testimonials</h2>
         <p className="text-clightGray mt-5">Hear from project managers who have reaped the benefits of our Incubation Program.</p>
@@ -44,7 +51,7 @@ const IncubationTestimonials = () => {
             testimonials.map((testimonial, i)=>{
               return(
                 <div key={i} >
-                  <div className="bg-cgray flex items-end  gap-10 mx-5 px-5 pt-5 rounded-xl">
+                  <div className="bg-cgray flex flex-col lg:flex-row items-center lg:items-end  gap-10 mx-5 lg:px-5 pt-5 rounded-xl">
                     <div className="w-1/2">
                       <Image src={testimonial.img} />
                     </div>

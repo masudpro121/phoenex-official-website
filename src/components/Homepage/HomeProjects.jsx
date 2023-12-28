@@ -92,7 +92,7 @@ const HomeProjects = () => {
         >
           {projects.map((project, i) => {
             return (
-              <div>
+              <div key={i}>
                 <div key={i} className="bg-cgray mx-2 lg:mx-10 p-7 rounded-3xl text-left">
                   <div className="space-y-2">
                     <div className="flex justify-center mb-10">
