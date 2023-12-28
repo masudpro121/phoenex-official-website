@@ -68,14 +68,14 @@ const WorkshopManagementPortfolio = () => {
     },
   ];
   return (
-    <div className="m-20">
+    <div className="m-5 lg:m-20">
       <div >
         <h2 className="text-5xl font-bold">Product Portfolio</h2>
         <p className="text-clightGray mt-5">
         Explore our diverse range of products and services, each crafted with precision to meet the evolving needs of our dynamic community.
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-5 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mt-20">
         {portfolios.map((portfolio, i) => {
           return (
             <div key={i} className="p-5 rounded-xl text-center  bg-cgray flex flex-col gap-5">

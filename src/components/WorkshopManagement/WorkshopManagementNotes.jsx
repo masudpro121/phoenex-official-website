@@ -16,13 +16,13 @@ const WorkshopManagementNotes = () => {
     },
   ]
   return (
-    <div className="m-20 bg-cgray p-10 rounded-xl">
-      <div className="flex items-center gap-20">
+    <div className="m-5 lg:m-20 bg-cgray p-7 lg:p-10 rounded-xl">
+      <div className="flex flex-col lg:flex-row text-center lg:text-start items-center gap-5 lg:gap-20">
         <h2 className="text-5xl font-bold">Release Notes</h2>
         <p className="text-clightGray">Stay informed about the latest updates, improvements, and releases for existing products.</p>
       </div>
-      <div className="bg-cdark rounded-2xl flex justify-between mt-5">
-        <div className="w-full text-center bg-cblue rounded-2xl m-2 p-3">
+      <div className=" bg-cdark rounded-2xl lg:flex justify-between mt-14 lg:mt-5">
+        <div className="w-full text-center bg-cblue rounded-2xl lg:m-2 p-3">
           <p className="text-xl font-semibold ">Release notes</p>
         </div>
         <div className="w-full text-center">
@@ -33,7 +33,7 @@ const WorkshopManagementNotes = () => {
         </div>
       </div>
 
-      <div>
+      <div className="pt-5">
         {
           notes.map((note, i)=>{
             return(

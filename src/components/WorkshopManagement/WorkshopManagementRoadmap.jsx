@@ -39,20 +39,22 @@ const WorkshopManagementRoadmap = () => {
     }
   ]
   return (
-    <div className="max-w-[800px] m-auto">
+    <div className="max-w-[800px] mx-5 py-20 lg:m-auto">
       <div >
         
         {
           roadmaps.map((roadmap, i)=>{
             return(
-              <div className={`flex gap-28 flex-start relative items-center ${(i+1)%2==0?'flex-row-reverse':''}`}>
-                <div className="absolute  h-full w-4  bg-cgray left-0 right-0 m-auto "></div>
-                <div className="absolute  h-8 w-8 rounded-full  bg-cblue left-0 right-0 m-auto "></div>
-                <div className="w-full">
-                  <h2 className="text-cgray text-[200px] font-bold">{roadmap.step}</h2>
+              <div className={`flex my-20 lg:my-0  lg:gap-28  relative items-center ${(i+1)%2==0?'flex-col lg:flex-row-reverse':'flex-col lg:flex-row'}`}>
+                <div className="hidden lg:block absolute  h-full w-4  bg-cgray left-0 right-0 m-auto "></div>
+                <div className="hidden lg:block absolute  h-8 w-8 rounded-full  bg-cblue left-0 right-0 m-auto "></div>
+
+                <div className="w-full flex justify-center">
+                  <p className="text-cgray leading-normal text-[100px] lg:text-[200px] font-bold">{roadmap.step}</p>
                 </div>
-                <div className="w-full space-y-4">
-                  <div><Image src={roadmap.icon} /></div>
+
+                <div className="w-full space-y-4 text-center lg:text-start">
+                  <div className="flex lg:block justify-center"><Image src={roadmap.icon} /></div>
                   <h2 className="text-xl font-semibold">{roadmap.title}</h2>
                   <p className="leading-loose  text-clightGray">{roadmap.description}</p>
                 </div>
