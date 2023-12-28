@@ -84,9 +84,9 @@ const CommunityDirectories = () => {
     },
   ];
   return (
-    <div className="m-20 py-20">
-      <div className="flex items-center gap-20">
-        <div className="w-full">
+    <div className="m-5 lg:m-20 py-20">
+      <div className="flex flex-col lg:flex-row  items-center gap-20">
+        <div className="w-full text-center lg:text-start">
           <h1>Community Directories</h1>
         </div>
         <div className="w-1/2 flex items-center gap-3">
@@ -94,7 +94,7 @@ const CommunityDirectories = () => {
           <button className="blue-btn">Search</button>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-5 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 gap-5 mt-20">
         {directors.map((director, i) => {
           return (
             <div className="rounded-xl text-center relative  bg-cgray flex flex-col gap-5">
