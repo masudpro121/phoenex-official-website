@@ -5,10 +5,10 @@ import EmailIcon from "@/images/email.svg";
 import Image from "next/image";
 const GetInTouch = () => {
   return (
-    <div className="flex flex-col  lg:flex-row gap-20  items-center  py-5 w-3/4 m-auto my-20">
+    <div className="flex flex-col  lg:flex-row gap-20  items-center  py-5 m-5 lg:w-3/4 lg:m-auto my-20">
       <div className=" w-full space-y-5">
         <div className="text-center lg:text-start">
-          <p className="font-bold text-3xl lg:text-5xl ">Get in Touch for Inquiries and Feedback</p>
+          <p className="font-bold text-3xl lg:text-5xl leading-relaxed">Get in Touch for Inquiries and Feedback</p>
           <p className="text-clightGray leading-loose mt-4">
             Your Questions, Feedback, and Inquiries Matter! Use the Form to Share
             Your<br/> Thoughts, and Our Team Will Get Back to You Promptly. We
@@ -17,20 +17,20 @@ const GetInTouch = () => {
         </div>
         <div className="flex gap-2 items-center !mt-12">
           <div>
-            <Image className="w-7" src={LocationIcon} />
+            <Image className="w-5 lg:w-7" src={LocationIcon} />
           </div>
           <p>New civil lines street#17 house NO # 7 </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-5 pt-3">
           <div className="flex gap-2 items-center">
             <div>
-              <Image className="w-7" src={CallIcon} />
+              <Image className="w-5 lg:w-7" src={CallIcon} />
             </div>
             <p>+92 309 80622 42</p>
           </div>
           <div className="flex gap-2 items-center">
             <div>
-              <Image className="w-7" src={EmailIcon} />
+              <Image className="w-5 lg:w-7" src={EmailIcon} />
             </div>
             <p>kashanbhatti00004@gmail.com</p>
           </div>
