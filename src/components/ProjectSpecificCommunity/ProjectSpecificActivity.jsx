@@ -15,7 +15,15 @@ const  ProjectSpecificActivity = () => {
     centerPadding: "10px",
     slidesToShow: 1,
     speed: 500,
-    dots:  true
+    dots:  true,
+    responsive:[
+      {
+        breakpoint: 1228,
+        settings: {
+          centerMode: false
+        }
+      }
+    ]
   };
   const activities = [
     {
@@ -101,13 +109,13 @@ const  ProjectSpecificActivity = () => {
     },
   ]
   return (
-    <div className="m-20">
+    <div className="m-8 lg:m-20">
       <Slider {...settings} >
         {
           activities.map((activity, i)=>{
             return(
-              <div key={i} className="p-10">
-                <div className="flex gap-10">
+              <div key={i} className="p-2 lg:p-10">
+                <div className="flex flex-col text-center lg:flex-row lg:text-starts gap-10">
                   <h2 className="text-cblue font-bold text-3xl">{activity.title}</h2>
                   <p className="text-clightGray leading-loose text-lg">{activity.description}</p>
                 </div>
@@ -115,15 +123,15 @@ const  ProjectSpecificActivity = () => {
                   <Image src={activity.img} />
                 </div>
 
-                <div className="flex justify-center gap-10 mt-10 py-10">
+                <div className="flex flex-col lg:flex-row justify-center gap-10 mt-10 py-10">
                   {
                     activity.processes.map((process, j)=>{
                       return(
-                        <div className="w-64 bg-cgray relative  rounded-xl text-center" key={j}>
-                          <div className={`absolute flex justify-center  h-full  w-full ${(j)%2==0? '-top-5 items-start': '-bottom-5 items-end'}`}>
+                        <div className="lg:w-64 bg-cgray relative  rounded-xl text-center" key={j}>
+                          <div className={`absolute flex justify-center  h-full  w-full ${(j)%2==0? '-top-5 items-start': '-top-5 lg:top-5 items-start  lg:-bottom-5 lg:items-end'}`}>
                             <Image className="border-4 border-cblue rounded-full p-2 w-14" src={process.icon} />
                           </div>
-                         <div className={`p-7 ${(j)%2==0? 'mt-8': 'mb-8'}`}>
+                         <div className={`p-7 ${(j)%2==0? 'mt-8': 'mt-8 lg:mt-0 lg:mb-8'}`}>
                           <h3 className="text-xl font-semibold">{process.title}</h3>
                             <p className="text-clightGray leading-loose mt-4">{process.description}</p>
                          </div>

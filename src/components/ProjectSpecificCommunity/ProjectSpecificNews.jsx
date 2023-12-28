@@ -11,7 +11,19 @@ const ProjectSpecificNews = () => {
     centerPadding: "10px",
     slidesToShow: 2,
     speed: 500,
-    dots:  true
+    dots:  true,
+    responsive: [
+      {
+        breakpoint: 1228,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          centerMode: false
+        }
+      }
+    ]
   };
   const allnews = [
     {
@@ -40,25 +52,25 @@ const ProjectSpecificNews = () => {
     },
   ]
   return (
-    <div className="m-20">
-      <div className="mb-10 px-10">
+    <div className="m-8 lg:m-20">
+      <div className="mb-10 lg:px-10 text-center lg:text-start">
         <h1>Latest news</h1>
-        <p className="text-xl mt-5 text-clightGray">Unprecedented Events and Timely Updates Shaping the World Today</p>
+        <p className="text-lg lg:text-xl mt-5 text-clightGray">Unprecedented Events and Timely Updates Shaping the World Today</p>
       </div>
       <Slider {...settings}>
         {
           allnews.map((news, i)=>{
             return(
-              <div className="" key={i}>
-                <div className="bg-cgray  p-7 m-5 rounded-xl">
+              <div className="text-center lg:text-start" key={i}>
+                <div className="bg-cgray  p-5 m-2 lg:m-5 rounded-xl">
                   <div>
                     <Image src={news.img} />
                   </div>
                   <div className="mt-5">
-                    <h2 className="text-xl font-semibold">{news.title}</h2>
+                    <h2 className="text-xl leading-loose font-semibold">{news.title}</h2>
                     <p className="leading-loose mt-4 text-clightGray">{news.description}</p>
                   </div>
-                  <div className="mt-8 flex justify-between">
+                  <div className="mt-8 flex items-center flex-col lg:flex-row gap-5 justify-between">
                     <button className="blue-btn">Find out more</button>
                     <p className="font-semibold">Date: {news.date}</p>
                   </div>

@@ -25,31 +25,33 @@ const ProjectSpecificManagement = () => {
     },
   ]
   return (
-    <div className="m-20 py-20">
+    <div className="m-5 lg:m-20 py-20">
       <div className="text-center">
-        <h2 className="text-5xl font-semibold">Community Management & Collaboration Opportunities</h2>
-        <p className="text-xl mt-10">Nurturing Engagement and Growth, Unlocking Synergies with Digital Marketing Agencies</p>
+        <h2 className="text-3xl lg:text-5xl font-semibold leading-relaxed">Community Management & Collaboration Opportunities</h2>
+        <p className="text-lg lg:text-xl mt-10">Nurturing Engagement and Growth, Unlocking Synergies with Digital Marketing Agencies</p>
       </div>
 
-      <div className="bg-cgray flex items-center p-2 rounded-xl my-20">
+      <div className="bg-cgray flex flex-col lg:flex-row items-center p-2 rounded-xl my-20">
         <div className="w-full text-center bg-cblue py-4 cursor-pointer rounded-xl">
-          <p className="font-semibold text-xl">Community Management</p>
+          <p className="font-semibold text-lg lg:text-xl">Community Management</p>
         </div>
         <div className="w-full text-center py-4 cursor-pointer">
-          <p className="text-xl">Collaboration Opportunities</p>
+          <p className="text-lg lg:text-xl">Collaboration Opportunities</p>
         </div>
       </div>
 
-      <div className="flex items-center gap-20">
+      <div className="flex flex-col  lg:flex-row items-center gap-20">
         <div className="w-full">
-          <p className="text-xl font-bold">Introduction</p>
-          <p className="text-clightGray leading-loose mt-5">Community managers play a pivotal role in fostering vibrant and engaged communities. They are the backbone, ensuring a positive and collaborative atmosphere. Their responsibilities extend beyond mere moderation, encompassing the facilitation of meaningful interactions and the growth of the community ecosystem. These dedicated professionals are instrumental in maintaining a healthy, inclusive environment for members to thrive.</p>
-          <p className="text-xl font-bold mt-10">Collaboration Opportunities</p>
-          <p className="text-clightGray leading-loose mt-5">Opportunities include joint marketing campaigns, co-branding initiatives, and collaborative events. To discuss potential collaborations, contact our collaboration team at </p>
-          <p className="text-cblue font-bold">collaborations@phoenex.com.</p>
+          <div className="text-center lg:text-start">
+            <p className="text-xl font-bold">Introduction</p>
+            <p className="text-clightGray leading-loose mt-5">Community managers play a pivotal role in fostering vibrant and engaged communities. They are the backbone, ensuring a positive and collaborative atmosphere. Their responsibilities extend beyond mere moderation, encompassing the facilitation of meaningful interactions and the growth of the community ecosystem. These dedicated professionals are instrumental in maintaining a healthy, inclusive environment for members to thrive.</p>
+            <p className="text-xl font-bold mt-10">Collaboration Opportunities</p>
+            <p className="text-clightGray leading-loose mt-5">Opportunities include joint marketing campaigns, co-branding initiatives, and collaborative events. To discuss potential collaborations, contact our collaboration team at </p>
+            <p className="text-cblue font-bold">collaborations@phoenex.com.</p>
+          </div>
           <div className="mt-16">
-            <p className="text-xl font-bold">Manager Contacts</p>
-            <div className="flex gap-10 mt-8">
+            <p className="text-xl font-bold text-center lg:text-start">Manager Contacts</p>
+            <div className="flex flex-col lg:flex-row gap-10 mt-8">
               <div className="space-y-4">
                 <p className="text-lg font-bold text-cblue">Sarah Johnson</p>
                 <p><span className="text-clightGray">Email: </span><span className="font-bold">sarah.johnson@phoenex.com</span></p>
@@ -73,16 +75,16 @@ const ProjectSpecificManagement = () => {
         </div>
       </div>
 
-      <div className="mt-32">
+      <div className="mt-32 text-center lg:text-start">
         <p className="text-xl font-bold">Introduction</p>
         <p className="text-clightGray leading-loose mt-5">Collaboration between community managers and digital marketing agencies is a powerful avenue for mutual growth. By combining the strengths of engaged communities with strategic marketing expertise, both parties can achieve heightened visibility, increased engagement, and expanded influence.</p>
         <p className="text-xl font-bold mt-10">Collaboration Types</p>
-        <div className="flex mt-7 gap-10">
+        <div className="flex flex-col lg:flex-row mt-7 gap-10">
            {
             collaborations.map((collaboration, i) => {
               return(
                 <div key={i} className="bg-cgray px-7 py-5 rounded-3xl">
-                  <div className="flex gap-5 items-center">
+                  <div className="flex justify-center lg:justify-start gap-5 items-center">
                     <Image src={collaboration.icon} />
                     <p className="text-lg font-semibold">{collaboration.title}</p>
                   </div>
@@ -96,10 +98,10 @@ const ProjectSpecificManagement = () => {
         </div>
       </div>
       
-      <div className="mt-20">
+      <div className="mt-20 text-center">
         <p className="text-xl font-bold">Submission Process</p>
-        <div className="flex justify-between items-start mt-7">
-          <div className="w-2/3">
+        <div className="flex flex-col lg:flex-row gap-10 justify-between lg:items-start mt-7">
+          <div className="lg:w-2/3">
             <p className="text-clightGray leading-loose">Digital marketing agencies interested in collaboration are invited to express their interest by reaching out to <span className="font-bold text-cblue">collaborations@phoenex.com.</span>  Provide an overview of your agency, your collaboration proposal, and how it aligns with the community's ethos.</p>
           </div>
           <button className="blue-btn">Send Proposal</button>
